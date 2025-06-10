@@ -13,6 +13,20 @@ La clase `Producto` representa un producto con los siguientes atributos:
 - `marca`: La marca del producto.
 - `precio`: El precio del producto.
 
-#### Constructor
-```java
-public Producto(int id, String nombre, String marca, double precio)
+### Clase Main
+
+La clase `Main` es responsable de la interacción con el usuario para registrar y mostrar productos. Utiliza un `ArrayList` para almacenar los productos y un `Scanner` para leer la entrada del usuario.
+
+#### Atributos
+- `productos`: Lista que almacena objetos de la clase `Producto`.
+- `scanner`: Objeto para leer la entrada del usuario.
+- `contadorId`: Contador para asignar un ID único a cada producto.
+
+#### Flujo del Programa
+1. **Registro de Productos**:
+   - Solicita al usuario ingresar el nombre, marca y precio de un producto.
+   - Crea un nuevo objeto `Producto` y lo agrega a la lista.
+   - Pregunta al usuario si desea ingresar otro producto.
+
+2. **Mostrar Productos**:
+   - Utiliza un `Iterator` para mostrar los detalles de cada producto registrado.
